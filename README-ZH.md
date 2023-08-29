@@ -316,7 +316,7 @@ VALL-E X 与 [Bark](https://github.com/suno-ai/bark), [VALL-E](https://arxiv.org
 - [ ] 给非python用户的`.bat`脚本
 - [x] 长文本生成
 - [ ] 微调以实现更好的语音自适应
-- [x] 用Vocos解码器替换Encodec解码器
+- [ ] 用Vocos解码器替换Encodec解码器
 - [ ] 更多...
 
 ## 🙏 感谢
