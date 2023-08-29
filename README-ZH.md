@@ -300,7 +300,7 @@ VALL-E X 与 [Bark](https://github.com/suno-ai/bark), [VALL-E](https://arxiv.org
 ## ❓ FAQ
 
 #### 在哪里可以下载checkpoint?
-* 当您第一次运行程序时,我们使用“wget”将模型下载到`./checkpoints/`目录里。
+* 当您第一次运行程序时,我们使用`wget`将模型下载到`./checkpoints/`目录里。
 * 如果第一次运行时下载失败，请从[这里](https://huggingface.co/Plachta/VALL-E-X/resolve/main/vallex-checkpoint.pt)手动下载模型，并将文件放在`./checkpoints/`里。
 
 #### 需要多少显存?
