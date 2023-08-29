@@ -99,7 +99,6 @@ audio_tokenizer = AudioTokenizer(device)
 if not os.path.exists("./whisper/"): os.mkdir("./whisper/")
 try:
     whisper_model = whisper.load_model("medium",download_root=os.path.join(os.getcwd(), "whisper")).cpu()
-    raise Exception()
 except Exception as e:
     logging.info(e)
     raise Exception(
