@@ -102,7 +102,7 @@ try:
 except Exception as e:
     logging.info(e)
     raise Exception(
-        "\n Whisper download failed, please go to "
+        "\n Whisper download failed or damaged, please go to "
         "'https://openaipublic.azureedge.net/main/whisper/models/345ae4da62f9b3d59415adc60127b97c714f32e89e936602e85993674d08dcb1/medium.pt'"
         "\n manually download model and put it to {} .".format(os.getcwd() + "\whisper"))
 
