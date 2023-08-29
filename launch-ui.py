@@ -68,7 +68,7 @@ if not os.path.exists(os.path.join("./checkpoints/", "vallex-checkpoint.pt")):
         wget.download("https://huggingface.co/Plachta/VALL-E-X/resolve/main/vallex-checkpoint.pt",
                       out="./checkpoints/vallex-checkpoint.pt", bar=wget.bar_adaptive)
     except Exception as e:
-        print(e)
+        logging.info(e)
         raise Exception(
             "\n Model weights download failed, please go to 'https://huggingface.co/Plachta/VALL-E-X/resolve/main/vallex-checkpoint.pt'"
             "\n manually download model weights and put it to {} .".format(os.getcwd() + "\checkpoints"))
@@ -101,7 +101,7 @@ try:
     whisper_model = whisper.load_model("medium",download_root=os.path.join(os.getcwd(), "whisper")).cpu()
     raise Exception()
 except Exception as e:
-    print(e)
+    logging.info(e)
     raise Exception(
         "\n Whisper download failed, please go to "
         "'https://openaipublic.azureedge.net/main/whisper/models/345ae4da62f9b3d59415adc60127b97c714f32e89e936602e85993674d08dcb1/medium.pt'"

@@ -57,7 +57,7 @@ def preload_models():
             wget.download("https://huggingface.co/Plachta/VALL-E-X/resolve/main/vallex-checkpoint.pt",
                           out="./checkpoints/vallex-checkpoint.pt", bar=wget.bar_adaptive)
         except Exception as e:
-            print(e)
+            logging.info(e)
             raise Exception(
                 "\n Model weights download failed, please go to 'https://huggingface.co/Plachta/VALL-E-X/resolve/main/vallex-checkpoint.pt'"
                 "\n manually download model weights and put it to {} .".format(os.getcwd() + "\checkpoints"))
